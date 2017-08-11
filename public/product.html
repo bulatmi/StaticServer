@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Ввод товара</title>
+    <script language="javascript" type="text/javascript"
+            src="http://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="js/product.js">
+    </script>
+</head>
+<body>
+<div class="new_product_form" align="center">
+    <input type="text" id="product_name" placeholder="Название">
+    <br>
+    <input type="text" id="price" placeholder="Цена">
+    <br>
+    <button id="submit" onclick="
+    sendUserData(document.getElementById('product_name').value,
+                document.getElementById('price').value)">
+        Отправить
+    </button>
+</div>
+</body>
