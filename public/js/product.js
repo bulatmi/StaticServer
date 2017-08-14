@@ -12,9 +12,10 @@ function sendProductData(product_name, price) {
             contentType: "application/json",
             dataType: "json",
             data: JSON.stringify(json),
-            success: function (data) {
-                window.location = '/login.html';
-            }
-        }
+        headers: {
+            'Auth-Token': $.cookie('Auth-Token')
+        }, }
+
+
     )
 }
